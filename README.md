@@ -6,10 +6,12 @@ Project Porfolio MR Gomez
 # Project Porfolio
 ```sh
 git clone https://github.com/mrgomezsv/porfolio_mr.git
-cd app
+cd porfolio_mr
 python -m venv env
-source env/bin/activate
+.\env\Scripts\Activate.ps1
 pip3 install -r requirements.txt
+$Env:FLASK_APP = "main.py"
+flask run
 ```
 
 # Para ambientes de UNIX
